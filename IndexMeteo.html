@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">#e08e00
+<head>
+  <title>FALL 3D - SkyAr</title>
+  <link rel="shortcut icon" href="ico.ico" type="image/vnd.microsoft.icon">
+  <meta charset=UTF-8?/ content=text/html; http-equiv="Content-Type">
+  <meta charset=ISO-8859-1?/ content=text/html; http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300" rel="stylesheet">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getUTCHours();
+      var m = today.getUTCMinutes();
+      var s = today.getUTCSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s + " UTC";
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+  <style>
+    /* width */
+    ::-webkit-scrollbar { width: 10px;}
+
+    /* Track */
+    ::-webkit-scrollbar-track { background: #f1f1f1;  }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb { background: #888; }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover { background: #555; }
+  
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed)
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav { background-color: #f1f1f1; height: 100%;}
+
+    /* Set black background color, white text and some padding */
+    footer {background-color: #555; color: white; padding: 15px;}
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav { height: auto; padding: 15px;}
+      .row.content {height: auto;}
+    }
+    .panel {font-family:Roboto Condensed; background-color:#e08e00;}
+    .col-xs-2 {font-family:Roboto Condensed;}
+    .panel-heading {font-family:Roboto Condensed; font-weight: bold; background-color:#e08e00;}
+    .panel-default>.panel-heading { color: #333; background-color: #e08e00; border-color: #404040; }
+    .panel-default { color: #333; background-color: #e08e00; border-color: #404040; }
+    .panel-collapse { color: #333; background-color: #404040; border-color: #404040; }
+    .list-group-item { position: relative; display: block; padding: 5px 10px; margin-bottom: -1px; background-color: #404040; border: 1px solid #404040; line-height: 95% }
+    body { background-color:#404040}
+    a {color:#bfbfbf;}
+
+    .panel-heading2 {font-family:Roboto Condensed; font-weight: bold; background-color:#df1749;}
+    .panel-default>.panel-heading2 { color: #333; background-color: #df1749; border-color: #404040; }
+    .panel-default { color: #333; background-color: #e08e00; border-color: #404040; }
+    
+
+    /* Add a dark background color with a little bit see-through */ 
+    .navbar { margin-bottom: 0; background-color: #2d2d30; border: 0; font-size: 11px !important; letter-spacing: 4px; opacity: 0.9;}
+
+    /* Add a gray color to all navbar links */
+    .navbar li a, .navbar .navbar-brand {  color: #d5d5d5 !important; }
+
+    /* On hover, the links will turn white */
+    .navbar-nav li a:hover { color: black !important; }
+
+    /* The active link */
+    .navbar-nav li.active a { color: #fff !important; background-color:#29292c !important; }
+
+    /* Remove border color from the collapsible button */
+    .navbar-default .navbar-toggle { border-color: transparent; }
+
+    /* Dropdown */
+    .open .dropdown-toggle {color: #fff ; background-color: #555 !important; }
+
+    /* Dropdown links */
+    .dropdown-menu li a {color: #000 !important;}
+
+    /* On hover, the dropdown links will turn red */
+    .dropdown-menu li a:hover { background-color: red !important; }
+    .dropdown-menu { min-width: -webkit-fill-available; }
+    .navbar-brand { margin-top: -10px; margin-left: -15px; }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-menu {display: block;}
+  </style>
+</head>
+
+<body oncontextmenu="return false" onkeydown="return false"   onload="startTime()">
+  <div class="container-fluid" style="background-color:#262626; ">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"> <h3 style="margin-top:8px;font-family:Roboto Condensed"> <div id="txt" > </div></h3></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+
+  <div class="container text-center" style="width:1500px; background-color:#808080;   ">
+    <div class="col-xs-2" style="background-color:#808080;">
+      <h1><img src="SkyAr5.png" width="100%" height="100%" class="img-rounded"><b> </b></h1>
+	    <img src="VAACBUE.png" width="100%" height="100%">
+  	  <div class="panel-group" id="menu1">
+        <div class="panel panel-default">
+          <a data-toggle="collapse" data-parent="#menu1" href="#FVAG01"><div class="panel-heading"> <h4 class="panel-title" style="color:black"> FVAG01 </h4></div>
+          </a>
+          <div id="FVAG01" class="panel-collapse collapse">
+            <ul class="list-group">
+              <a href="FVAG01_CARGA_MASA.html" target="someFrame"><li class="list-group-item">Carga de masa total <P></P></li></a>
+              <a href="FVAG01_CONCENTRACION.html" target="someFrame"><li class="list-group-item">Concentracion total<P></P></li></a>
+              <a href="FVAG01_CONCENTRACION_BAJO.html" target="someFrame"><li class="list-group-item">Concentracion media <P>(FL050 - FL200)</P></li></a>
+              <a href="FVAG01_CONCENTRACION_MEDIO.html" target="someFrame"><li class="list-group-item">Concentracion media <P>(FL250 - FL400)</P></li></a>
+              <a href="FVAG01_CONCENTRACION_ALTO.html" target="someFrame"><li class="list-group-item">Concentracion media <P>(FL450 - FL600)</P></li></a>
+
+              <a data-toggle="collapse" data-parent="#menu2" href="#VIENTO01"><div class="panel-heading2"> <h4 class="panel-title2" style="color:black"> CAMPOS VIENTOS </h4></div>
+              </a>
+              <div id="VIENTO01" class="panel-collapse2 collapse">
+                <ul class="list-group">
+                  <a href="FVAG01_WINDGRAM_TOT.html" target="someFrame"><li class="list-group-item">Windgram Total</P></li></a>
+                  <a href="viento_1000.html" target="someFrame"><li class="list-group-item">Campo 1000 hPa <P></P></li></a>
+                  <a href="viento_975.html" target="someFrame"><li class="list-group-item">Campo 975 hPa<P></P></li></a>
+                  <a href="viento_950.html" target="someFrame"><li class="list-group-item">Campo 950 hPa <P></P></li></a>
+                  <a href="viento_925.html" target="someFrame"><li class="list-group-item">Campo 925 hPa<P></P></li></a>
+                  <a href="viento_900.html" target="someFrame"><li class="list-group-item">Campo 900 hPa <P></P></li></a>
+                  <a href="viento_850.html" target="someFrame"><li class="list-group-item">Campo 850 hPa<P></P></li></a>
+                  <a href="viento_800.html" target="someFrame"><li class="list-group-item">Campo 800 hPa <P></P></li></a>
+                  <a href="viento_750.html" target="someFrame"><li class="list-group-item">Campo 750 hPa<P></P></li></a>
+                  <a href="viento_700.html" target="someFrame"><li class="list-group-item">Campo 700 hPa <P></P></li></a>
+                  <a href="viento_650.html" target="someFrame"><li class="list-group-item">Campo 650 hPa<P></P></li></a>
+                  <a href="viento_600.html" target="someFrame"><li class="list-group-item">Campo 600 hPa <P></P></li></a>
+                  <a href="viento_550.html" target="someFrame"><li class="list-group-item">Campo 550 hPa<P></P></li></a>
+                  <a href="viento_500.html" target="someFrame"><li class="list-group-item">Campo 500 hPa <P></P></li></a>
+                  <a href="viento_450.html" target="someFrame"><li class="list-group-item">Campo 450 hPa<P></P></li></a>
+                  <a href="viento_400.html" target="someFrame"><li class="list-group-item">Campo 400 hPa <P></P></li></a>
+                  <a href="viento_350.html" target="someFrame"><li class="list-group-item">Campo 350 hPa<P></P></li></a>
+                  <a href="viento_300.html" target="someFrame"><li class="list-group-item">Campo 300 hPa <P></P></li></a>
+                  <a href="viento_250.html" target="someFrame"><li class="list-group-item">Campo 250 hPa<P></P></li></a>
+                  <a href="viento_200.html" target="someFrame"><li class="list-group-item">Campo 200 hPa<P></P></li></a>
+                </ul>
+              </div>
+            </ul>
+          
+          </div>
+	        <a data-toggle="collapse" data-parent="#menu1" href="#FVAG02"><div class="panel-heading"> <h4 class="panel-title" style="color:black"> FVAG02</h4></div>
+          </a>
+          <div id="FVAG02" class="panel-collapse collapse">
+            <ul class="list-group">
+              <a href="FVAG02_CARGA_MASA.html" target="someFrame"><li class="list-group-item">Carga de masa total <p></p> </li></a>
+              <a href="FVAG02_CONCENTRACION.html" target="someFrame"><li class="list-group-item">Concentracion total <p></p> </li></a>
+              <a href="FVAG02_CONCENTRACION_BAJO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL050 - FL200)</p></li></a>
+              <a href="FVAG02_CONCENTRACION_MEDIO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL250 - FL400)</p></li></a>
+              <a href="FVAG02_CONCENTRACION_ALTO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL450 - FL600)</p></li></a>
+            </ul>
+          </div>
+	        <a data-toggle="collapse" data-parent="#menu1" href="#FVAG03"><div class="panel-heading"> <h4 class="panel-title" style="color:black">FVAG03 </h4> </div>
+          </a>
+          <div id="FVAG03" class="panel-collapse collapse">
+            <ul class="list-group">
+              <a href="FVAG03_CARGA_MASA.html" target="someFrame"><li class="list-group-item">Carga de masa total <p></p></li></a>
+              <a href="FVAG03_CONCENTRACION.html" target="someFrame"><li class="list-group-item">Concentracion total<p></p></li></a>
+              <a href="FVAG03_CONCENTRACION_BAJO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL050 - FL200)</p></li></a>
+              <a href="FVAG03_CONCENTRACION_MEDIO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL250 - FL400)</p></li></a>
+              <a href="FVAG03_CONCENTRACION_ALTO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL450 - FL600)</p></li></a>
+            </ul>
+          </div>
+	        <a data-toggle="collapse" data-parent="#menu1" href="#FVAG04"> <div class="panel-heading"> <h4 class="panel-title" style="color:black"> FVAG04</h4> </div>
+          </a>
+          <div id="FVAG04" class="panel-collapse collapse">
+            <ul class="list-group">
+              <a href="FVAG04_CARGA_MASA.html" target="someFrame"><li class="list-group-item">Carga de masa total <p></p></li></a>
+              <a href="FVAG04_CONCENTRACION.html" target="someFrame"><li class="list-group-item">Concentracion total <p></p></li></a>
+              <a href="FVAG04_CONCENTRACION_BAJO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL050 - FL200)</p></li></a>
+              <a href="FVAG04_CONCENTRACION_MEDIO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL250 - FL400)</p></li></a>
+              <a href="FVAG04_CONCENTRACION_ALTO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL450 - FL600)</p></li></a>
+            </ul>
+          </div>
+	        <a data-toggle="collapse" data-parent="#menu1" href="#FVAG05"><div class="panel-heading"><h4 class="panel-title" style="color:black"> FVAG05 </h4></div>
+          </a>
+          <div id="FVAG05" class="panel-collapse collapse">
+            <ul class="list-group">
+              <a href="FVAG05_CARGA_MASA.html" target="someFrame"><li class="list-group-item">Carga de masa total <p></p></li></a>
+              <a href="FVAG05_CONCENTRACION.html" target="someFrame"><li class="list-group-item">Concentracion total <p></p></li></a>
+              <a href="FVAG05_CONCENTRACION_BAJO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL050 - FL200)</p></li></a>
+              <a href="FVAG05_CONCENTRACION_MEDIO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL250 - FL400)</p></li></a>
+              <a href="FVAG05_CONCENTRACION_ALTO.html" target="someFrame"><li class="list-group-item">Concentracion media <p>(FL450 - FL600)</p></li></a>
+            </ul>
+          </div>
+	  	  </div>
+      </div>
+
+      <h1><img src="TECLADO3.png" width="100%" height="100%" class="img-rounded"><b> </b></h1>
+	    <h6> <div style="color: #404040"><p>USE EL TECLADO PARA ANIMAR LAS IMAGENES Y EL MOUSE PARA EL ZOOM</p></div></h6>
+	    <p>Actualizado 12/04/2019</p>
+		  <h1><a href="https://ssl.smn.gob.ar/vaac/buenosaires/inicio.php?lang=es" target="_blank" ><img src="Logo_VAAC.jpg" width="100%" height="100%" class="img-rounded"></a><b> </b></a></h1>
+      <a href="https://www.smn.gob.ar/" target="_blank"><img src="Logo_SMN.png" width="100%" height="100%" class="img-rounded"></a> <p></p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+      <div class="container-fluid"  >
+        <h6>
+          <p>Panel desarrollado por<br>Sanchez Marino M. (VMSR) y <br>Tom Whittaker (SSEC).</p>
+          <p>Colaboraron Lohigorry P. (VMSR),<br>Rugna M. (I+D) y Zeitune M. (VMSR).</p>
+          <p>Imágenes desarrolladas por<br>Vidal L. (I+D) y Rugna M. (I+D).</p>
+          <p>Sugerencias acerca del panel: <b>msanchez@smn.gob.ar</b><br>Sugerencias acerca de las imágenes:<b> lvidal@smn.gob.ar</b></p>
+        </h6>
+      </div>
+    </div>
+      
+    <div class="col-xs-10 text-center" style="background-color:#808080">
+      <iframe name="someFrame" id="someFrame" style="border:0px;width:100%;height:1320px; position: center;" oncontextmenu="return false" onkeydown="return false"> </iframe>
+    </div>
+  </div>
+</div>
+</body>
+</html>
